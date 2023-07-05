@@ -57,7 +57,7 @@ font-family: "Roboto", sans-serif;
 font-size: 16px;
 background: linear-gradient(45deg, #fff1eb, #ace0f9);
 text-align: center;
-box-sizing: border-box;
+
 }
 
 h2 {
@@ -113,6 +113,7 @@ textarea.form-input {
     line-height: 140%;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 .options-label::before {
@@ -139,23 +140,15 @@ textarea.form-input {
 
 }
 
-.select {
-}
-.file {
-}
-.file-item {
-}
-.file-input {
-}
-.file-button {
-}
-.file-preview {
-}
-.checkbox {
-}
-.checkbox-input {
-}
-.checkbox-label {
-}
 .form-button {
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color:black;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 0 white);
 }
