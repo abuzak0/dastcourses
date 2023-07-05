@@ -60,95 +60,102 @@ text-align: center;
 box-sizing: border-box;
 }
 
-h5 {
+h2 {
 font-size: 50px;
 }
 
-.air {
-max-width: 350px;
-margin: 50px auto 0;
-padding: 20px;
-background: #E4E3DF;
-font-family: 'Oswald', sans-serif;
-}
-.form-inner {
-border: 2px solid #909090;
-border-bottom: none;
-}
-.stripes-block {
-position: relative;
-padding: 15px;
-margin-bottom: 20px;
-background: repeating-linear-gradient(-45deg, #E4E3DF, #E4E3DF 5px, #909090 6px, #909090 8px);
-border-bottom: 2px solid #909090;
+h3 {
+    font-size: 30px;
+    margin: 0px 0px 30px 0px;
 }
 
-.stripes-block:before {
-content: "";
-position: absolute;
-left: 50%;
-top: 8px;
-margin-left: -6px;
-width: 14px;
-height: 14px;
-border-radius: 50%;
-background: #fffffe;
-box-shadow: 0 0 0 1px #090606, 0 0 0 12px #9c8778;
+.form-ft {
+    min-width: 550px;
+    margin: 0px auto;
+    padding: 30px 0;
 }
-.form-row {
-position: relative;
-padding: 10px;
-border-bottom: 2px solid #909090;
+.form-item {
+    margin-bottom: 20px;
 }
-.form-row label {
-display: block;
+.form-label {
+    font-style: 18px;
+    display: block;
+    margin-bottom: 10px;
 }
-
-.form-row input {
-display: block;
-width: 100%;
-padding: 0;
-line-height: 30px;
-border-width: 0;
-background: #E4E3DF;
-}
-.form-row textarea {
-width: 100%;
-margin-bottom:40px;
-padding: 0;
-outline: 0;
-line-height: 40px;
-background: transparent url(https://html5book.ru/wp-content/uploads/2016/12/bg-form.png) bottom left repeat-x;
-background-size: 8px 40px;
-letter-spacing: 0.2em;
-background-attachment: local;
-background-repeat: repeat;
-border-width: 0;
-resize: none;
+.form-input {
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    width: 20%;
+    font-style: 18px;
 }
 
-.form-row-icon {
-position: relative;
-border-bottom: 2px solid #909090;
+textarea.form-input {
+    min-height: 60px;
+    resize: vertical;
+    padding: 20px;
 }
-.form-row-icon .fa {
-position: absolute;
-left: 0;
-top: 0;
-width: 40px;
-height: 40px;
-line-height: 40px;
-text-align: center;
-background: #909090;
-color: #E4E3DF;
-border-bottom: 2px solid;
+
+
+.options-item {
 }
-.form-row-icon input {
-display: block;
-width: 100%;
-padding: 0 10px 0 50px;
-line-height: 40px;
-box-sizing: border-box;
-border-width: 0;
-background: #E4E3DF;
+.options-input {
+    display: none;
+}
+
+.options-input:checked + .options-label::after {
+    transform: scale(1);
+}
+
+.options-label {
+    display: inline-flex;
+    font-style: 16px;
+    line-height: 140%;
+    align-items: center;
+    position: relative;
+}
+
+.options-label::before {
+    content: "";
+    align-self: flex-start;
+    flex: 0 0 24px;
+    height: 24px;
+    border-color: black;
+    border-radius: 50%;
+    margin: 0px 10px 0px 0px;
+}
+
+.options-label::after {
+    transition: transform 0.3s ease 0s;
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    border-radius: 50%;
+    transform: scale(0);
+
+}
+
+.select {
+}
+.file {
+}
+.file-item {
+}
+.file-input {
+}
+.file-button {
+}
+.file-preview {
+}
+.checkbox {
+}
+.checkbox-input {
+}
+.checkbox-label {
+}
+.form-button {
 }

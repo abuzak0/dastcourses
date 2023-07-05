@@ -35,32 +35,62 @@
         
     </div>
     <div class="footer">
-      <h5>Успей забрать свою пару</h5>
-      <form action="" class="air">
-        <div class="form-inner">
-        <div class="stripes-block"></div>
-        <div class="form-row">
-        <label for="name">Имя</label>
-        <input type="text" id="name" required>
+      <h2>Успей забрать свою пару</h2>
+      <form action="#" id="form" class="form-ft">
+        <h3>Заполните свои данные</h3>
+        <div class="form-item">
+          <label for="formName" class="form-label" >*Имя</label>
+          <input id="formName" name="name" type="text" class="form-input">
         </div>
-        <div class="form-row">
-        <label for="address">Адрес</label>
-        <textarea rows="3" id="address" required></textarea>
+        <div class="form-item">
+          <label for="formEmale" class="form-label" >*@male</label>
+          <input id="formEmale" name="Emale" type="text" class="form-input">
         </div>
-        <div class="form-row-icon">
-        <i class="fa fa-tty"></i>
-        <input type="text" id="phone" required>
+        <div class="form-item">
+          <div class="form-label">Выберите пол</div>
+          <div class="options-item">
+            <input id="formMale" type="radio" value="male" name="gender" class="options-input">
+            <label for="formMale" class="options-label"><span>Мужской</span></label>
+          </div>
+          <div class="options-item">
+            <input id="formFemale" type="radio" value="female" name="gender" class="options-input">
+            <label for="formFemale" class="options-label"><span>Женский</span></label>
+          </div>
         </div>
-        <div class="form-row-icon">
-        <i class="fa fa-envelope-o"></i>
-        <input type="email" id="email" required>
+        <div class="form-item">
+          <label for="forMessage" class="form-label">Напишите свой адрес и индекс</label>
+          <textarea name="message" id="forMessage" class="form-input"></textarea>
         </div>
-        <div class="form-row-icon">
-        <i class="fa fa-paper-plane-o"></i>
-        <input type="submit" value="">
+        <div class="form-item">
+          <div class="form-label">На какое время года?</div>
+          <select name="time" class="select">
+            <option value="1" selected>Зима</option>
+            <option value="2">Весна</option>
+            <option value="3">Лето</option>
+            <option value="4">Осень</option>
+          </select>
         </div>
+        <div class="form-item">
+          <div class="form-label">Прикрепить фото модели</div>
+          <div class="file">
+            <div class="file-item">
+              <input id="forImage" accept=".jpg, .png, .gif" type="file" name="image" class="file-input">
+              <div class="file-button">Выбрать</div>
+            </div>
+            <div class="file-preview"></div>
+          </div>
         </div>
-        </form>
+        <div class="form-item">
+          <div class="checkbox">
+            <input id="forAgreement" type="checkbox" name="agreement"
+            class="checkbox-input">
+            <label for="forAgreement" class="checkbox-label">
+              <span>Даю свое согласие на сбор и обработку моих персональных данных</span>
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="form-button">Отправить</button>
+      </form>
           
 
 
