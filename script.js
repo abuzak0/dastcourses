@@ -6,3 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
   }
 });
+
+const formBtn = document.querySelector(".form-button");
+formBtn.addEventListener("click", () => {
+  let user = [];
+  for (let elem of form.elements) user.push(elem.value);
+  console.log(user);
+});

@@ -40,7 +40,7 @@
         <h3>Заполните свои данные</h3>
         <div class="form-item">
           <label for="formName" class="form-label" >*Имя</label>
-          <input id="formName" name="name" type="text" class="form-input">
+          <input id="formName" name="name" type="text" class="form-input" >
         </div>
         <div class="form-item">
           <label for="formEmale" class="form-label" >*@male</label>
@@ -49,7 +49,7 @@
         <div class="form-item">
           <div class="form-label">Выберите пол</div>
           <div class="options-item">
-            <input id="formMale" type="radio" checked="male" name="gender" class="options-input">
+            <input id="formMale" type="radio" checked="male" name="gender" value="Male" class="options-input">
             <label for="formMale" class="options-label"><span>Мужской</span></label>
           </div>
           <div class="options-item">
@@ -64,13 +64,13 @@
         <div class="form-item">
           <div class="form-label">На какое время года?</div>
           <select name="time" class="select">
-            <option value="1" selected>Зима</option>
-            <option value="2">Весна</option>
-            <option value="3">Лето</option>
-            <option value="4">Осень</option>
+            <option value="Зима" selected>Зима</option>
+            <option value="Весна">Весна</option>
+            <option value="Лето">Лето</option>
+            <option value="Осень">Осень</option>
           </select>
         </div>
-        <button type="submit" class="form-button">Отправить</button>
+        <button type="submit" class="form-button" >Отправить</button>
       </form>
           </div>
         </div>
@@ -80,8 +80,7 @@
     </div> 
       </div> 
        
-
-
+<script src="./script.js"></script>
 
 </body>
 </html>
