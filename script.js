@@ -1,6 +1,6 @@
 const { form } = document.forms;
 
-const isRadio = (type) => ["checkbox", "radio"].includes(type);
+const isRadio = (type) => ["radio"].includes(type);
 
 function getFormValue(event) {
   event.preventDefault();
@@ -18,7 +18,9 @@ function getFormValue(event) {
       values[name] = isRadio(type) ? checked : value;
     }
   }
-
+  if (values.gender == true) {
+    values.gender = "female";
+  } else if (values.gender == false) values.gender = "male";
   console.log(values);
 }
 
@@ -37,11 +39,4 @@ document.addEventListener("DOMContentLoaded", function () {
   async function formSend(e) {
     e.preventDefault();
   }
-});
-
-
-
-
-
-const formBtn = document.querySelector(".form-button");
-formBtn.addEventListener("click", () => {}); */
+});*/

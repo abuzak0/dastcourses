@@ -1,0 +1,29 @@
+// Trello Go
+	require_once($_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php');
+  
+	$api_key = '5b25ec7e6913766284ce3ea20a57005e';
+	$returned_token = 'ATTA7bc30b68c75b4bf69623798d6be93cc66f6486bc682ff51de556b37e9c317bcfA21DE3C8';
+	$client = new \Trello\Client($api_key);
+
+	$client->setAccessToken($returned_token);
+
+	$list_id = '64a92d9c57ffb889c6abd08e';
+	$card = new \Trello\Model\Card($client);
+	$card->name = $_POST['name'] . ', оставил заявку';
+	$card->desc = 'Тема письма: ' . $_POST['title'] . '
+-----
+- Имя: ' . $_POST['name'] . '
+- E-mail: ' . $_POST['Emale'] . '
+- Пол: ' . $_POST['gender'] . '
+- Адрес: ' . $_POST['message'] . '
+- Время года: ' . $_POST['time'] . '
+
+
+
+- Источник: ' . urldecode($_SERVER['HTTP_REFERER']) . '
+- IP Address: ' . $_SERVER['REMOTE_ADDR'];
+	$card->pos = 'top';
+	$card->idLabels = array('5e30233d18d7bf4eda3cada6', '5e30276cb9e2613e40dc6e68', '5e29c4f2af955c41f2ac190d');
+	$card->idList = $list_id;
+	$card->idMembers = array('5dad34eed46f741c8839e3af');
+	$card->save();
