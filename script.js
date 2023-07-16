@@ -12,11 +12,10 @@ function getFormValue(event) {
   const values = {};
 
   for (let i = 0; i < elements.length; i++) {
-    const fromElement = elements[i];
-    const { name } = fromElement;
+    const { name } = elements[i];
 
     if (name) {
-      const { value, type, checked } = fromElement;
+      const { value, type, checked } = elements[i];
 
       values[name] = isRadio(type) ? checked : value;
     }
@@ -24,7 +23,6 @@ function getFormValue(event) {
   if (values.gender == true) {
     values.gender = "female";
   } else if (values.gender == false) values.gender = "male";
-  console.log(values);
 
   /*Делаем ветч запрос */
   fetch("https://jsonplaceholder.typicode.com/users", {
