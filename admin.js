@@ -10,7 +10,8 @@ fetch("https://jsonplaceholder.typicode.com/users")
       <td>${user.id}</td>
       <td>${user.name}</td>
       <td>${user.email}</td>
-      <td>${user.address.street}</td>`;
+      <td>${user.address.street}</td>
+      <td>${user.phone}</td>`;
       tBody.appendChild(row);
     });
   })
