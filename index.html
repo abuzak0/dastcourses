@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Project</title>
 </head>
 <body>
       <div class="wrapper">
@@ -34,6 +34,9 @@
             </div>
         
     </div>
+    <div>
+      <a href="admin.html">Table</a>
+    </div>
     <div class="footer">
       <h2>Успей забрать свою пару</h2>
       <form action="#" id="form" class="form-ft">
@@ -45,39 +48,21 @@
         <div class="form-item">
           <label for="formEmale" class="form-label" >*@male</label>
           <input id="formEmale" name="Emale" type="text" class="form-input">
-        </div>
-        <div class="form-item">
-          <div class="form-label">Выберите пол</div>
-          <div class="options-item">
-            <input id="formMale" type="radio" checked="male" name="gender" value="Male" class="options-input">
-            <label for="formMale" class="options-label"><span>Мужской</span></label>
-          </div>
-          <div class="options-item">
-            <input id="formFemale" type="radio" value="female" name="gender" class="options-input">
-            <label for="formFemale" class="options-label"><span>Женский</span></label>
-          </div>
-        </div>
+        </div>       
         <div class="form-item">
           <label for="forMessage" class="form-label">Напишите свой адрес и индекс</label>
           <textarea name="message" id="forMessage" class="form-input"></textarea>
         </div>
         <div class="form-item">
-          <div class="form-label">На какое время года?</div>
-          <select name="time" class="select">
-            <option value="Зима" selected>Зима</option>
-            <option value="Весна">Весна</option>
-            <option value="Лето">Лето</option>
-            <option value="Осень">Осень</option>
-          </select>
+          <label for="formPhone" class="form-label" >*Тел</label>
+          <input id="formPhone" name="phone" type="text" class="form-input">
         </div>
         <button type="submit" class="form-button" >Отправить</button>
       </form>
           </div>
         </div>
       </div>
-  
-        
-    </div> 
+    </div>  
       </div> 
        
 <script src="./script.js"></script>
