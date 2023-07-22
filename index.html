@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-      <div class="wrapper">
-        <div class="header">
-            <div class="img">
+      <div class="container-fluid text-center ">
+        <div class="header row">
+            <div class="col">
                 <img src="./img/new-balance-860v7-men-s-distance-shoes-m860by7-blue-yellow-3aed-main.28345214.c4d64c9b.jpg" alt="ne udalos">
-                <h1>Современное кросовкостроение</h1>
+                <h1 class="p-4">Современное кросовкостроение</h1>
             </div>
     
     </div>
-    <div class="content">
-        <div class="sv1">
+    <div class="content row row-cols-3">
+        <div class="sv1 col">
 
          <img src="./img/пятка.jpg" alt="">
          <p>Удержание пятки</p>
          </div>   
         
-        <div class="sv2">
+        <div class="sv2 col">
                 <img src="./img/стойкие.jpg" alt="">
                 <p>Износостойкость</p> 
             </div>
            
-            <div class="sv3">
+            <div class="sv3 col">
                 <img src="./img/стелька.jpg" alt="">
                 <p>Ортопедическая стелька</p>
             </div>
@@ -37,10 +38,10 @@
     <div>
       <a href="admin.html">Table</a>
     </div>
-    <div class="footer">
-      <h2>Успей забрать свою пару</h2>
-      <form action="#" id="form" class="form-ft">
-        <h3>Заполните свои данные</h3>
+    <div class="footer row">
+      <h2 class="fs-1 p-2">Успей забрать свою пару</h2>
+      <form col action="#" id="form" class="form-ft m-0 p-3">
+        <h4 class="p-2">Заполните свои данные</h4>
         <div class="form-item">
           <label for="formName" class="form-label" >*Имя</label>
           <input id="formName" name="name" type="text" class="form-input" >
@@ -66,6 +67,7 @@
       </div> 
        
 <script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </body>
 </html>
