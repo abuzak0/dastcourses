@@ -1,77 +1,17 @@
-
-.wrapper {
-    display: grid;
-    grid-template-areas: 
-    'hd hd hd'
-    'main main main'
-    'ft ft ft';
-    grid-gap: 10px;
-    height: 100vh;
-}
-
-
-.header {
-text-align: center;
-padding: 20px;
-grid-area: hd;
-}
-
-.content {
-grid-area: main;
-display: grid;
-grid-template-areas: 'sv1 sv2 sv3';
-grid-gap: 10px;
-padding: 10px;
-}
-
-.sv1{
-grid-area: sv1;
-text-align: center;}
-
-.sv2{
-grid-area: sv2;
-text-align: center;}
-
-.sv3{
-grid-area: sv3;
-text-align: center;
-}
-
 p {
+padding: 15px;
 font-size: 22px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h1 {
-font-weight: 1;
-font-size: 82px ;
-text-align: center;
-font-family: 'Times New Roman', Times, serif;
-font-style: italic;
-}
 
 .footer {
-grid-area: ft;
-font-family: "Roboto", sans-serif;
-font-size: 16px;
 background: linear-gradient(45deg, #fff1eb, #ace0f9);
-text-align: center;
-
 }
 
-h2 {
-font-size: 50px;
-}
-
-h3 {
-    font-size: 30px;
-    margin: 0px 0px 30px 0px;
-}
 
 .form-ft {
     min-width: 550px;
-    margin: 0px auto;
-    padding: 30px 0;
 }
 .form-item {
     margin-bottom: 20px;
@@ -96,53 +36,12 @@ textarea.form-input {
 }
 
 
-.options-input {
-    display: none;
-}
-
-.options-input:checked + .options-label::after {
-    transform: scale(1);
-}
-
-.options-label {
-    display: inline-flex;
-    font-style: 16px;
-    line-height: 140%;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-}
-
-.options-label::before {
-    content: "";
-    align-self: flex-start;
-    flex: 0 0 24px;
-    height: 24px;
-    border-color: black;
-    border-radius: 50%;
-    margin: 0px 10px 0px 0px;
-}
-
-.options-label::after {
-    transition: transform 0.3s ease 0s;
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 16px;
-    height: 16px;
-    background-color: black;
-    border-radius: 50%;
-    transform: scale(0);
-
-}
-
 .form-button {
     width: 20%;
     justify-content: center;
     align-items: center;
     background-color: green;
-    color:black;
+    color:white;
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
